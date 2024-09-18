@@ -30,7 +30,7 @@
                   <li>Basic Motion Detection Alerts</li>
                   <li><b>Best for:</b>Small Apartments</li>
                 </ul>
-                <a target="_blank" href="price.html" type="button" class="pricing w-100 btn btn-lg btn-outline-dark">Pay Now</a>
+                <a target="_blank" href="/price" class="pricing w-100 btn btn-lg btn-outline-dark">Pay Now</a>
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@
                   <li><b>Best for:</b>Homes</li>
                 </ul>
                 </ul>
-                <a target="_blank" href="price.html" type="button" class="pricing w-100 btn btn-lg btn-dark">Pay Now</a>
+                <a target="_blank" href="/price" class="pricing w-100 btn btn-lg btn-dark">Pay Now</a>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@
                   <li><b>Premium Features:</b> Earthquake Alert, Fire Alert, Intrusion Alert</li>
                   <li><b>Best for:</b> Large Homes & Businesses</li>
                 </ul>
-                <a target="_blank" href="price.html" type="button" class="pricing w-100 btn btn-lg btn-dark">Pay Now</a>
+                <a target="_blank" href="/price" class="pricing w-100 btn btn-lg btn-dark">Pay Now</a>
               </div>
             </div>
           </div>
@@ -79,7 +79,25 @@
   </div>
 
 
-<script src="./script.js"></script>
+<script>
+  var numOfButton = document.querySelectorAll(".pricing").length;
+
+for(let i = 0; i < numOfButton; i++){
+    document.querySelectorAll(".pricing")[i].addEventListener("click", warning);
+    
+    function warning(){
+        alert("Do you want to continue?");
+        
+    }
+
+}
+
+
+var onclick = $0.addEventListener("click", function(event){
+    console.log(event);
+
+});
+</script>
 
 </body>
 </html>
